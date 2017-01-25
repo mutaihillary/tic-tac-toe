@@ -57,7 +57,14 @@
   		var symbols = squares.map(function(square){
   			return square.innerHTML
   		})
-  		console.log(symbols);
+  		var winningCombos= [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7]]
+  		winningCombos.find(function(combo){
+  			if (symbols[combo[0]] == symbols[combo[1]] && symbols[combo[1]]==symbols[combo[2]])
+  				return symbols[combo[0]]
+  		}else{
+  			return false
+  		}
+  		})
   	}
 
   </script>
