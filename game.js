@@ -49,7 +49,7 @@ var Game = function(table){
 	var game_start = function(data){
 		if (data.player == 1) {
 			board.symbol = 'X';
-			Game.message('Your turn');
+			Game.message('Your turn to play');
 			board.enabled = true;
 			init_event_listeners(true);
 		} else if (data.player == 2) {
@@ -58,14 +58,14 @@ var Game = function(table){
 			init_event_listeners(true);
 			wait();
 		} else {
-			Game.message('You are watching a game');
+			Game.message('You are only watching a game');
 			init_event_listeners(false);
 			wait();
 		}
 	}
 	
 	this.run = function(){
-		Game.message('Waiting for other player');
+		Game.message('Waiting for other player to move');
 		connection.send('init', null, game_start)
 	}
 }
