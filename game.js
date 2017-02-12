@@ -58,7 +58,7 @@ var Game = function(table){
 			init_event_listeners(true);
 			wait();
 		} else {
-			Game.message('You are only watching a game');
+			Game.message('You are watching a game');
 			init_event_listeners(false);
 			wait();
 		}
