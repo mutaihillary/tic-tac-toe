@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ### Tic-Tac-Toe
 
 + The objective of this code is to implement a barebones version of two player tic-tac-toe game. 
@@ -33,8 +33,3 @@ To install, clone the repo in the target system
 + Wait for connection to complete and other player to join.
 + Enjoy the game.
 
-
-
-
-
->>>>>>> 3e2a933f44d5a06a33b15b7130051f9af0836fe3
